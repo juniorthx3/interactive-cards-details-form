@@ -12,7 +12,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        redErrors: 'hsl(0, 100%, 66%)',
+        inputActive: 'hsl(249, 99%, 64%)',
+        input2:'hsl(278, 94%, 30%)',
+        inputErrors: 'hsl(0, 100%, 66%)',
         whiteOfficial: 'hsl(0, 0%, 100%)',
         lightGrayishViolet: 'hsl(270, 3%, 87%)',
         darkGrayishViolet: 'hsl(279, 6%, 55%)',

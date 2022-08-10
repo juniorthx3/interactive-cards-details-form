@@ -1,3 +1,101 @@
+@import url('https://fonts.google.com/specimen/Space+Grotesk');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body{
+        font-family: 'Space Grotesk', sans-serif;
+    }
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    @apply relative w-screen h-screen flex justify-center items-center text-lg;
+}
+
+
+/* Design Form Component */
+form{
+    @apply container flex flex-col justify-center
+}
+
+.card-field{
+    @apply flex flex-col pt-4;
+}
+
+label{
+    @apply text-sm uppercase pb-1 tracking-wider ;
+}
+
+input{
+    @apply border rounded-lg h-10 w-80 p-3;
+}
+
+input:hover{
+    @apply outline-inputActive border-t-inputActive border-r-input2 border-b-inputActive border-l-input2
+}
+
+.btn{
+    @apply bg-veryDarkViolet text-white text-center py-3 shadow-sm tracking-wider rounded-lg mt-2;
+}
+
+.btn:hover{
+    @apply bg-input2
+}
+
+
+/* Design Card Component */
+
+.imgFront, .imgBack{
+    @apply rounded shadow-lg;
+}
+
+.Front, .Back{
+    @apply relative;
+}
+
+.Front{
+    @apply absolute -top-20 -left-64;
+}
+
+.Back {
+   @apply -bottom-52 right-44;
+}
+
+.idCard, .cardHolder, .month, .expiryYear{
+   @apply absolute
+}
+
+.logo{
+    @apply absolute top-7 left-10;
+}
+
+.idCard{
+   @apply bottom-16 left-12 text-3xl;
+}
+
+.cardHolder{
+    @apply bottom-5 left-12 uppercase text-sm;
+}
+
+.month{
+    @apply bottom-5 right-8;
+}
+
+.expiryYear{
+    @apply bottom-5 right-12;
+}
+
+.cvc{
+  @apply absolute bottom-28 right-16;
+}
+
+.error{
+    @apply tracking-tighter 
+}

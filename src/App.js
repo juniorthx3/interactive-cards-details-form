@@ -1,10 +1,17 @@
+import Form from "./components/Form";
+import Card from './components/Card'
+import BackgroundImage from "./components/BackgroundImage";
+
+
 function App() {
   return (
-    <div>
-       <h1 className="text-3xl font-bold underline">
-          Hello world!
-      </h1>
-    </div>
+    <section>
+      <BackgroundImage />
+      <div className="container relative mx-auto flex">
+        <Card />
+        <Form />
+      </div>
+    </section>
   );
 }
 
