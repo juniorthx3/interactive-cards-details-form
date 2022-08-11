@@ -1,15 +1,23 @@
 import Form from "./components/Form";
 import Card from './components/Card'
 import BackgroundImage from "./components/BackgroundImage";
+import { useState } from "react";
 
 
 function App() {
+  const [cardInfo, setCardInfo] = useState({
+    cardHolder:"",
+    idCard:"",
+    month:"",
+    expiryYear:"",
+    cvc:""
+  })
   return (
     <section>
       <BackgroundImage />
       <div className="container relative mx-auto flex">
-        <Card />
-        <Form />
+        <Card cardInfo={cardInfo} />
+        <Form cardInfo={cardInfo} setCardInfo={setCardInfo}/>
       </div>
     </section>
   );

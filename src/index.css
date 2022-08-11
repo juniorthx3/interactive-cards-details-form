@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/specimen/Space+Grotesk');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,21 +16,25 @@
 }
 
 body{
-    @apply relative w-screen h-screen flex justify-center items-center text-lg;
+    @apply relative w-screen h-screen flex justify-around items-center text-lg;
 }
 
 
 /* Design Form Component */
+.con-card{
+    @apply relative flex;
+}
+
 form{
     @apply container flex flex-col justify-center
 }
 
 .card-field{
-    @apply flex flex-col pt-4;
+    @apply flex flex-col pt-6;
 }
 
 label{
-    @apply text-sm uppercase pb-1 tracking-wider ;
+    @apply text-xs uppercase pb-1 tracking-widest;
 }
 
 input{
@@ -51,21 +55,20 @@ input:hover{
 
 
 /* Design Card Component */
-
 .imgFront, .imgBack{
     @apply rounded shadow-lg;
 }
 
 .Front, .Back{
-    @apply relative;
+    @apply relative text-whiteOfficial;
 }
 
 .Front{
-    @apply absolute -top-20 -left-64;
+    @apply md:top-3 md:-left-36;
 }
 
 .Back {
-   @apply -bottom-52 right-44;
+   @apply md:top-10 md:right-16;
 }
 
 .idCard, .cardHolder, .month, .expiryYear{
@@ -77,7 +80,7 @@ input:hover{
 }
 
 .idCard{
-   @apply bottom-16 left-12 text-3xl;
+   @apply bottom-16 left-12 text-3xl tracking-wide;
 }
 
 .cardHolder{
@@ -85,15 +88,11 @@ input:hover{
 }
 
 .month{
-    @apply bottom-5 right-8;
-}
-
-.expiryYear{
-    @apply bottom-5 right-12;
+    @apply bottom-5 right-6;
 }
 
 .cvc{
-  @apply absolute bottom-28 right-16;
+    @apply absolute bottom-28 right-16;
 }
 
 .error{
