@@ -7,30 +7,44 @@
 @layer base {
     body{
         font-family: 'Space Grotesk', sans-serif;
+        font-size:18px;
+    },
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
     }
 }
 
-*{
-    margin:0;
-    padding:0;
-}
-
 body{
-    @apply relative w-screen h-screen flex justify-around items-center text-lg;
+    @apply relative h-screen flex flex-col md:justify-center md:items-center;
 }
 
+/* BACKGROUND IMAGES (BACKGROUNDIMAGE.JSX) */
+.bg-image-desktop{
+    @apply sm:hidden md:block absolute top-0 left-0 h-screen;
+}
 
-/* Design Form Component */
+.bg-image-mobile{
+    @apply sm:block absolute top-0 left-0 bg-cover w-full md:hidden;
+}
+
+/* APP.JS */
+.box{
+    @apply relative max-w-full w-full h-full m-auto md:flex ;
+}
+
+/* (FORM.JSX) FORM DESIGN */
 .con-card{
-    @apply relative flex;
+    @apply relative grow-0 shrink basis-auto;
 }
 
 form{
-    @apply container flex flex-col justify-center
+    @apply container flex flex-col justify-center;
 }
 
 .card-field{
-    @apply flex flex-col pt-6;
+    @apply flex flex-col mb-6;
 }
 
 label{
@@ -38,7 +52,7 @@ label{
 }
 
 input{
-    @apply border rounded-lg h-10 w-80 p-3;
+    @apply border rounded-lg h-10 w-80 p-3 outline-0 font-light;
 }
 
 input:hover{
@@ -53,10 +67,14 @@ input:hover{
     @apply bg-input2
 }
 
+.error{
+    @apply tracking-tighter text-inputErrors text-xs font-medium pt-1 pl-1
+}
 
-/* Design Card Component */
+
+/* (CARD.JSX) Design Card Component */
 .imgFront, .imgBack{
-    @apply rounded shadow-lg;
+    @apply rounded-xl shadow-lg; 
 }
 
 .Front, .Back{
@@ -64,37 +82,35 @@ input:hover{
 }
 
 .Front{
-    @apply md:top-3 md:-left-36;
+    @apply top-40 -right-8 w-3/4 md:w-full md:-top-3 md:-left-72 z-10
 }
 
 .Back {
-   @apply md:top-10 md:right-16;
-}
+   @apply -top-36 left-24 w-3/4 md:w-full md:top-5 md:-left-44
+} 
 
 .idCard, .cardHolder, .month, .expiryYear{
    @apply absolute
 }
 
 .logo{
-    @apply absolute top-7 left-10;
+    @apply absolute w-14 top-7 left-10 md:w-auto;
 }
 
 .idCard{
-   @apply bottom-16 left-12 text-3xl tracking-wide;
+    @apply bottom-16 left-12 text-2xl md:text-3xl tracking-wide;
 }
 
 .cardHolder{
-    @apply bottom-5 left-12 uppercase text-sm;
+    @apply bottom-5 left-12 uppercase text-xs md:text-sm;
 }
 
 .month{
-    @apply bottom-5 right-6;
+    @apply bottom-5 right-6 text-xs md:text-sm;
 }
 
 .cvc{
-    @apply absolute bottom-28 right-16;
+    @apply absolute bottom-24 right-12 text-xs md:text-lg md:bottom-28 md:right-16;
 }
 
-.error{
-    @apply tracking-tighter 
-}
+

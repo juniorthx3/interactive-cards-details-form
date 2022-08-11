@@ -15,7 +15,7 @@ function App() {
   return (
     <section>
       <BackgroundImage />
-      <div className="container relative mx-auto flex">
+      <div className="box">
         <Card cardInfo={cardInfo} />
         <Form cardInfo={cardInfo} setCardInfo={setCardInfo}/>
       </div>

@@ -1,9 +1,10 @@
+import Validation from "./Validation"
 
 const Form = ({cardInfo, setCardInfo}) => {
   const {cardHolder, idCard, month, expiryYear, cvc} = cardInfo
   return (
     <section className="con-card">
-       <form>
+       <form className="h-96">
             <div className="card-field">
                     <label htmlFor="cardHolderName">Cardholder name</label>
                     <input type="text" 
@@ -66,6 +67,7 @@ const Form = ({cardInfo, setCardInfo}) => {
                 <button type="submit" className="btn"> Confirm </button>
             </div>
         </form>
+        <Validation />
     </section>
   )
 }
