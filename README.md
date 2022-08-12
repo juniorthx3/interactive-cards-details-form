@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Code](https://github.com/juniorthx3/interactive-cards-details-form#screenshot)
+- Solution URL: [https://github.com/juniorthx3/interactive-cards-details-form#screenshot](https://github.com/juniorthx3/interactive-cards-details-form#screenshot)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -51,6 +51,6 @@ Users should be able to:
 ## Author
 
 - Website - [https://github.com/juniorthx3](https://github.com/juniorthx3)
-- Frontend Mentor - [@juniorthx3](https://www.frontendmentor.io/profile/juniorthx3)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/juniorthx3](https://www.frontendmentor.io/profile/juniorthx3)
 - Twitter - [https://twitter.com/Juniorthx3](https://twitter.com/Juniorthx3)
 
