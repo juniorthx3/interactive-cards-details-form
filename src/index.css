@@ -16,31 +16,68 @@
     }
 }
 
-body{
-    @apply relative h-screen flex flex-col md:justify-center md:items-center;
+.box{
+    @apply w-screen h-screen m-auto flex flex-col justify-center items-center md:flex-row md:justify-evenly 
 }
 
 /* BACKGROUND IMAGES (BACKGROUNDIMAGE.JSX) */
 .bg-image-desktop{
-    @apply sm:hidden md:block absolute top-0 left-0 h-screen w-4/12;
+    @apply sm:hidden absolute top-0 left-0 h-screen w-4/12 md:block;
 }
 
 .bg-image-mobile{
-    @apply sm:block absolute top-0 left-0 bg-cover  w-full md:hidden;
+    @apply sm:block absolute top-0 left-0 w-screen md:hidden;
 }
 
-/* APP.JS */
-.box{
-    @apply relative max-w-full w-full h-full m-auto md:flex ;
+/* (CARD.JSX) Design Card Component */
+
+.Front, .Back{
+    @apply relative text-whiteOfficial;
+}
+
+.Front{
+    @apply absolute top-32 left-4 w-3/4 md:relative md:w-full md:top-2 md:-left-24 z-10
+}
+
+.Back {
+   @apply absolute top-10 left-20 w-3/4 md:relative md:w-full md:top-10 md:left-3
+} 
+
+.imgFront, .imgBack{
+    @apply rounded-xl shadow-lg; 
+}
+
+.idCard, .cardHolder, .month, .expiryYear{
+   @apply absolute
+}
+
+.logo{
+    @apply w-12 absolute top-5 left-6 md:w-auto;
+}
+
+.idCard{
+    @apply absolute top-16 left-6 text-lg tracking-widest  md:top-28 md:text-3xl ;
+}
+
+.cardHolder{
+    @apply absolute top-28 left-6 uppercase text-xs md:text-sm md:top-48;
+}
+
+.month{
+    @apply absolute top-28 left-56 text-xs md:top-48 md:left-96 md:text-sm;
+}
+
+.cvc{
+    @apply absolute top-16 right-12 text-xs md:text-lg md:top-28 md:right-16;
 }
 
 /* (FORM.JSX) FORM DESIGN */
 .con-card{
-    @apply relative grow-0 shrink basis-auto flex justify-center -top-7 md:top-0 md:items-center;
+    @apply relative grow-0 shrink basis-auto flex justify-center  md:items-center ;
 }
 
 form{
-    @apply container flex flex-col justify-center;
+    @apply container flex flex-col justify-center mt-28;
 }
 
 .card-field{
@@ -82,47 +119,6 @@ input:hover{
 
 .con-val .txt{
     @apply pt-5 text-gray-400 mb-8
-}
-
-/* (CARD.JSX) Design Card Component */
-.imgFront, .imgBack{
-    @apply rounded-xl shadow-lg; 
-}
-
-.Front, .Back{
-    @apply relative text-whiteOfficial;
-}
-
-.Front{
-    @apply top-44 -right-8 w-3/4 md:w-full md:-top-3 md:-left-44 z-10
-}
-
-.Back {
-   @apply -top-32 left-24 w-3/4 md:w-full md:top-5 md:-left-24
-} 
-
-.idCard, .cardHolder, .month, .expiryYear{
-   @apply absolute
-}
-
-.logo{
-    @apply absolute w-14 top-7 left-10 md:w-auto;
-}
-
-.idCard{
-    @apply bottom-16 left-10 text-2xl md:text-3xl tracking-wide;
-}
-
-.cardHolder{
-    @apply absolute bottom-5 left-12 uppercase text-xs md:text-sm;
-}
-
-.month{
-    @apply bottom-5 right-6 text-xs md:text-sm;
-}
-
-.cvc{
-    @apply absolute bottom-24 right-12 text-xs md:text-lg md:bottom-28 md:right-16;
 }
 
 

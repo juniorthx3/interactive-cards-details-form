@@ -83,14 +83,12 @@ function App() {
   } 
 
   return (
-    <section>
+    <section className="box">
       <BackgroundImage />
-      <div className="box">
-        <Card cardInfo={cardInfo} />
-        { showForm ? <Form cardInfo={cardInfo} handleChange={handleChange} handleSubmit={handleSubmit} cardError={cardError} /> 
-                   : <Validation handleClick={handleClick}/> 
-        }
-      </div>
+      <Card cardInfo={cardInfo} />
+      { showForm ? <Form cardInfo={cardInfo} handleChange={handleChange} handleSubmit={handleSubmit} cardError={cardError} /> 
+                 : <Validation handleClick={handleClick}/> 
+      }
     </section>
   );
 }
