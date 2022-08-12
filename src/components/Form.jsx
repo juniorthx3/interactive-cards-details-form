@@ -54,7 +54,7 @@ const Form = ({cardInfo, setCardInfo}) => {
                         <input type="text" 
                                name="cvc" 
                                placeholder="e.g. 123" 
-                               className="w-36" 
+                               className="w-48 md:w-36" 
                                maxLength={3}
                                value={cvc}
                                onChange={e=>setCardInfo({...cardInfo, cvc: e.target.value})}
