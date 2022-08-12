@@ -1,12 +1,13 @@
 import iconComplete from '../images/icon-complete.svg'
-const Validation = () => {
+
+const Validation = ({handleClick}) => {
   return (
-      <div className="hidden">
-        <img src={iconComplete} alt="" />
-        <h2 className="thankMessage">Thank you</h2>
-        <p>We've added your card details.</p>
-        <button id="continue">Continue</button>
-      </div>
+      <section className="con-val">
+        <img src={iconComplete} alt="" className='w-16'/>
+        <h2 className="msg">Thank you!</h2>
+        <p className="txt">We've added your card details.</p>
+        <button className="btn w-80" onClick={handleClick}>Continue</button>
+      </section>
   )
 }
 
