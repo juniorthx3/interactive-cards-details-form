@@ -41,6 +41,7 @@ function App() {
     const errors = {}
     const regexNumbers = /^[0-9]*$/
     const regexIdCard = /^([0-9]{4}[\s]?){3}([0-9]{4})$/
+    const regexMonth = /^([1-9]|[0-1][0-2])$/
 
     if(!val.cardHolder){
       errors.cardHolder = "Can't be blank"
@@ -54,7 +55,7 @@ function App() {
 
     if(!val.month){
       errors.month = "Can't be blank"
-    }else if(!regexNumbers.test(val.month)){
+    }else if(!regexMonth.test(val.month)){
       errors.month = "Wrong format, numbers only"
     }
 
