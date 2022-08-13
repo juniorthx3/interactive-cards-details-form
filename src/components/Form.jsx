@@ -52,7 +52,7 @@ const Form = ({cardInfo, cardError, handleSubmit, handleChange}) => {
                         <input type="text" 
                                name="cvc" 
                                placeholder="e.g. 123" 
-                               className={cardError.cvc ? 'border-inputErrors w-60 md:w-36' : 'w-60 md:w-20 lg:w-36'}
+                               className={cardError.cvc ? 'border-inputErrors  sm:w-60 md:w-20 lg:w-36' : 'w-28 sm:w-60 md:w-20 lg:w-36'}
                                maxLength={3}
                                value={cvc}
                                onChange={handleChange}

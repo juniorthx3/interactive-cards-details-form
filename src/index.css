@@ -105,7 +105,7 @@ input:hover{
 
 /* (VALIDATION.JSX) FORM DESIGN */ 
 .con-val{
-    @apply mt-24 relative flex flex-col justify-center items-center md:mt-0;
+    @apply mt-80 sm:mt-24 relative flex flex-col justify-center items-center md:mt-0;
 }
 
 .con-val .msg{
