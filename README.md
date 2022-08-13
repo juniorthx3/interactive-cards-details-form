@@ -28,8 +28,16 @@ Users should be able to:
 - See hover, active, and focus states for interactive elements on the page
 
 ### Screenshot
+```
+Below are some screenshot of the project
+```
 ![Project pic](project-desktop-view.PNG)
+![Project pic](project-desktop-view2.PNG)
+![Project pic](project-desktop-view3.PNG)
+![Project pic](project-desktop-view4.PNG)
 ![Project pic](project-mobile-view.PNG)
+![Project pic](project-mobile-view1.PNG)
+![Project pic](project-mobile-view2.PNG)
   
 
 ### Links
