@@ -5,7 +5,7 @@ import cardLogo from '../images/card-logo.svg'
 const Card = ({ cardInfo }) => {
   const {cardHolder, idCard, month, expiryYear, cvc} = cardInfo
   return (
-    <section className='flex flex-col justify-center'>
+    <section>
           <div className='Front'>
               <img src={bgCardFront} alt="" className='imgFront'/>
               <img src={cardLogo} alt="" className='logo'/>

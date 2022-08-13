@@ -8,80 +8,75 @@
     body{
         font-family: 'Space Grotesk', sans-serif;
         font-size:18px;
-    },
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
     }
 }
 
-.box{
-    @apply w-screen h-screen m-auto flex flex-col justify-center items-center md:flex-row md:justify-evenly 
+/* BACKGROUND IMAGES (BACKGROUNDIMAGE.JSX) */
+.bg-image-desktop, .bg-image-mobile{
+    @apply absolute top-0 left-0;
 }
 
-/* BACKGROUND IMAGES (BACKGROUNDIMAGE.JSX) */
 .bg-image-desktop{
-    @apply sm:hidden absolute top-0 left-0 h-screen w-4/12 md:block;
+    @apply hidden h-screen w-4/12 md:block;
 }
 
 .bg-image-mobile{
-    @apply sm:block absolute top-0 left-0 w-screen md:hidden;
+    @apply sm:relative block w-screen h-2/5 md:hidden;
+}
+
+/* CONTAINER (APP.JSX) */
+.box{
+    @apply w-screen h-screen flex flex-col md:flex-row md:justify-center md:items-center md:space-x-16   
 }
 
 /* (CARD.JSX) Design Card Component */
-
 .Front, .Back{
-    @apply relative text-whiteOfficial;
+    @apply absolute md:relative text-whiteOfficial;
 }
 
 .Front{
-    @apply absolute top-32 left-4 w-3/4 md:relative md:w-full md:top-2 md:-left-24 z-10
+    @apply top-32 left-10 w-3/4 z-10 sm:top-40 md:w-11/12 md:top-2 lg:-left-24;
 }
 
 .Back {
-   @apply absolute top-10 left-20 w-3/4 md:relative md:w-full md:top-10 md:left-3
+   @apply top-10 left-16 sm:left-24 sm:w-3/4 md:left-16 md:w-11/12 md:top-8 lg:top-10 lg:left-1;
 } 
 
 .imgFront, .imgBack{
     @apply rounded-xl shadow-lg; 
 }
 
-.idCard, .cardHolder, .month, .expiryYear{
-   @apply absolute
+.idCard, .cardHolder, .month, .expiryYear, .cvc, .logo{
+   @apply absolute;
 }
 
 .logo{
-    @apply w-12 absolute top-5 left-6 md:w-auto;
+    @apply w-12 top-5 left-8 md:w-auto;
 }
 
 .idCard{
-    @apply absolute top-16 left-6 text-lg tracking-widest  md:top-28 md:text-3xl ;
+    @apply top-1/2 left-8 text-lg sm:text-2xl tracking-widest md:top-28 ;
 }
 
 .cardHolder{
-    @apply absolute top-28 left-6 uppercase text-xs md:text-sm md:top-48;
+    @apply top-3/4 left-8 uppercase text-xs md:top-44 lg:text-sm lg:top-44;
 }
 
 .month{
-    @apply absolute top-28 left-56 text-xs md:top-48 md:left-96 md:text-sm;
+    @apply top-3/4 left-56 sm:left-72 text-xs md:left-80 md:top-44 lg:top-44 lg:text-sm;
 }
 
 .cvc{
-    @apply absolute top-16 right-12 text-xs md:text-lg md:top-28 md:right-16;
+    @apply h-9 flex justify-center items-center text-sm top-16 right-8 sm:top-20 sm:right-14  md:block md:text-lg md:top-24 lg:right-14;
 }
 
 /* (FORM.JSX) FORM DESIGN */
-.con-card{
-    @apply relative grow-0 shrink basis-auto flex justify-center  md:items-center ;
-}
-
 form{
-    @apply container flex flex-col justify-center mt-28;
+    @apply flex flex-col justify-center mt-80 sm:mt-6 sm:pt-20 px-10 md:pt-0 md:px-0 md:mt-24
 }
 
 .card-field{
-    @apply flex flex-col mb-3 md:mb-6;
+    @apply flex flex-col mb-4;
 }
 
 label{
@@ -110,7 +105,7 @@ input:hover{
 
 /* (VALIDATION.JSX) FORM DESIGN */ 
 .con-val{
-    @apply relative  flex flex-col justify-center items-center ;
+    @apply mt-24 relative flex flex-col justify-center items-center md:mt-0;
 }
 
 .con-val .msg{
