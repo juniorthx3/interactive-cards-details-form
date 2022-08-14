@@ -12,8 +12,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 ```
-Below are some screenshot of the project
+Below are some pictures related to the project challenge
 ```
 ![Project pic](project-desktop-view.PNG)
 ![Project pic](project-desktop-view2.PNG)
