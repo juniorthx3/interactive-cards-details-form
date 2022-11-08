@@ -41,7 +41,7 @@ Below are some pictures related to the project challenge
 ### Links
 
 - Solution URL: [https://github.com/juniorthx3/interactive-cards-details-form#screenshot](https://github.com/juniorthx3/interactive-cards-details-form#screenshot)
-- Live Site URL: [https://interactive-cards-details-form.herokuapp.com/](https://interactive-cards-details-form.herokuapp.com/)
+- Live Site URL: [https://interactive-cards-details-form.netlify.app/](https://interactive-cards-details-form.netlify.app/)
 
 ## My process
 
